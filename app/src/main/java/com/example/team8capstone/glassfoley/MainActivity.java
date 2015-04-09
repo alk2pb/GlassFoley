@@ -562,8 +562,9 @@ public class MainActivity extends Activity implements MediaPlayer.OnCompletionLi
     private void setCardInfo() {
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Male Catheterization")
+                .setText("")
                 .setVideoResource(R.raw.fvid0)
-                .setImageResource(R.drawable.vpic0));
+                .setImageResource(R.drawable.fpic0));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Preparation")
@@ -571,7 +572,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnCompletionLi
                 .addBullet("Perform Hand Hygiene")
                 .addBullet("Provide privacy")
                 .setVideoResource(R.raw.fvid1)
-                .setImageResource(R.drawable.vpic1));
+                .setImageResource(R.drawable.fpic1));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Cleaning")
@@ -579,14 +580,14 @@ public class MainActivity extends Activity implements MediaPlayer.OnCompletionLi
                 .addBullet("Put on gloves")
                 .addBullet("Clean genital area with castile wipes or washcloth with warm water and soap.  Clean tip of penis first outward from meatus, than shaft of penis should be washed with downward strokes")
                 .setVideoResource(R.raw.fvid2)
-                .setImageResource(R.drawable.vpic2));
+                .setImageResource(R.drawable.fpic2));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Open the Catheter Kit")
                 .addBullet("Open kit using sterile procedure")
                 .addBullet("Don sterile gloves using proper technique")
                 .setVideoResource(R.raw.fvid3)
-                .setImageResource(R.drawable.vpic3));
+                .setImageResource(R.drawable.fpic3));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Prepare the Equipment")
@@ -595,7 +596,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnCompletionLi
                 .addBullet("Place fenestrated drape over penis")
                 .addBullet("Inspect catheter and place end in lubricant")
                 .setVideoResource(R.raw.fvid4)
-                .setImageResource(R.drawable.vpic4));
+                .setImageResource(R.drawable.fpic4));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Sterilizing")
@@ -603,14 +604,15 @@ public class MainActivity extends Activity implements MediaPlayer.OnCompletionLi
                 .addBullet("Lift penis with non-dominant hand at a 60-90* angle. This hand will remain in position until the catheterization is complete")
                 .addBullet("Using dominant hand clean the meatus with swabs in circular motion.  Complete this three times. (This step will be simulated, do not touch model with swabs)")
                 .setVideoResource(R.raw.fvid5)
-                .setImageResource(R.drawable.vpic5));
+                .setImageResource(R.drawable.fpic5)
+                .setTextSize(10));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Inset Catheter")
                 .addBullet("Pick up the catheter near the tip and ensure it is well lubricated")
                 .addBullet("While holding the penis firmly, advance catheter to bifurcation")
                 .setVideoResource(R.raw.fvid6)
-                .setImageResource(R.drawable.vpic6));
+                .setImageResource(R.drawable.fpic6));
 
         cardInfos.add(new CardInfo(cardInfos.size(), R.layout.left_column_layout)
                 .setHeader("Finish Task")
@@ -619,6 +621,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnCompletionLi
                 .addBullet("Disconnect syringe")
                 .addBullet("Gently pull back on catheter to ensure it is securely seated in the bladder")
                 .setVideoResource(R.raw.fvid7)
-                .setImageResource(R.drawable.vpic7));
+                .setImageResource(R.drawable.fpic7)
+                .setTextSize(10));
     }
 }
